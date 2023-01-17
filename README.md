@@ -18,4 +18,6 @@ Read Deepface to see how the triangulation and making the image into a 3d projec
 
 Read Facenet to see how triplet loss of selecting 2 images of a specific person and one of some one looking same but not the same person and use them to find weights using cnns such that only the correct person can be recognised
 
-Implemented Facenet on LFW(Labeled Faces in the wild) dataset to check its accuracy, cropped the images using opencv so that only faces are present in the images
+Implemented harr.py on LFW(Labeled Faces in the wild) dataset to crop the images using opencv so that only faces are present in the images without other things being disturbing the weights to be learnt
+
+Implemented Facenet paper using Tensorflow library and added layers in the model using the weights pretrained on imagenet, 2 models of resnet and Xception present in the application of keras and with additional layers trained the data using triplet loss and plotted the cost vs number of iterations to see how the weights got better to decrease the cost 
